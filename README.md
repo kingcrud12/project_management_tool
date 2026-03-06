@@ -64,3 +64,46 @@ Le projet utilise une identité visuelle "Deep Navy & Soft Gray" pour un aspect 
 # Configuration de la DB dans application.properties
 ./mvnw spring-boot:run
 ```
+
+## 🤝 Contribuer au Projet
+
+Ce projet est **Open Source** ! Nous accueillons avec enthousiasme toutes les contributions, qu'il s'agisse de corrections de bugs, de nouvelles fonctionnalités ou d'améliorations de la documentation.
+
+Pour maintenir la qualité du code, merci de respecter scrupuleusement les règles suivantes :
+
+### 🌳 Gestion des Branches
+
+Toute contribution doit se faire via une **branche temporaire** isolée. Le nommage doit suivre ces conventions :
+
+- **Correction de bug :** `nom_du_fix/nom_du_bug/plateforme`
+  - _Ex: `fix-auth-error/api` ou `fix-sidebar-mobile/client-web`_
+- **Nouvelle fonctionnalité :** `nom_de_la_fonctionnalité/plateforme`
+  - _Ex: `kanban-view/client-web` ou `email-notification/api`_
+- **Sous-fonctionnalité :** `nom_de_la_sous_fonctionnalité/nom_fonctionnalité/plateforme`
+  - _Ex: `drag-drop/kanban-view/client-web`_
+
+> **Note sur la plateforme :** Précisez toujours `client-web` pour Angular ou `api` pour Spring Boot.
+
+### 🔄 Flux de Travail (Workflow)
+
+1.  **Pull Request (PR) :** Toutes les PR doivent être dirigées vers la branche **`develop_v1`** pour le moment.
+2.  **Commits :** Vos messages de commit doivent être explicites (ex: `feat(api): add history tracking logic` ou `fix(web): correct badge alignment`).
+3.  **Validation :** Une relecture de code est nécessaire avant toute fusion.
+
+### 📌 Structure du Dépôt
+
+Nous utilisons un système de branches à deux niveaux :
+
+| Type de Branche      | Nom des Branches                      | Description                                                    |
+| :------------------- | :------------------------------------ | :------------------------------------------------------------- |
+| **En cours (v1)**    | `develop_v1`, `staging_v1`, `main_v1` | Branches actives pour le développement de la version actuelle. |
+| **Versions Stables** | `develop`, `staging`, `main`          | Représentent les versions finales et stables du code.          |
+
+---
+
+## 🛠️ Comment soumettre votre modification ?
+
+1. **Forkez** le projet.
+2. Créez votre branche selon les conventions ci-dessus.
+3. Commitez vos changements avec des messages clairs.
+4. Poussez votre branche et ouvrez une **Pull Request** vers `develop_v1`.
