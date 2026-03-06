@@ -35,6 +35,8 @@ CREATE TABLE Task (
     ProjectId INT NOT NULL,
     UserId INT NOT NULL, 
     title VARCHAR(255) NOT NULL,
+    StatusEnum ENUM('blocked', 'in_progress', 'cancelled', 'closed') NOT NULL,
+    PriorityEnum ENUM('high', 'low', 'lowest', 'highest') NOT NULL,
     description TEXT NOT NULL,
     CONSTRAINT fk_task_project FOREIGN KEY (ProjectId) REFERENCES Project(id) ON DELETE CASCADE,
     CONSTRAINT fk_task_user FOREIGN KEY (UserId) REFERENCES User(id) ON DELETE CASCADE
@@ -75,8 +77,8 @@ SELECT id, @last_project_id, 'observer' FROM User WHERE email = 'luc.s@email.com
 
 -- Création d'une Tâche
 -- CORRECTION : Les constantes sont dans le SELECT, le FROM et WHERE sont à la fin.
-INSERT INTO Task (ProjectId, UserId, title, description) 
-SELECT @last_project_id, id, 'Schéma de Base de Données', 'Mettez en place le MPD final avec des INT.' 
+INSERT INTO Task (ProjectId, UserId, title, StatusEnum, PriorityEnum, description) 
+SELECT @last_project_id, id, 'Schéma de Base de Données', 'in_progress', 'low', 'Mettez en place le MPD final avec des INT.' 
 FROM User 
 WHERE email = 'jean.dupont@email.com';
 
