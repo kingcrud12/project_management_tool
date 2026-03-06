@@ -76,9 +76,12 @@ Pour maintenir la qualité du code, merci de respecter scrupuleusement les règl
 Toute contribution doit se faire via une **branche temporaire** isolée. Le nommage doit suivre ces conventions :
 
 - **Correction de bug :** `nom_du_fix/nom_du_bug/plateforme`
-  - _Ex: `fix-auth-error/api` ou `fix-sidebar-mobile/client-web`_
+  - \_Ex: `fix-auth-error/authentication/api`
+  - `fix-sidebar-mobile/sidebar-menu-mobile/client-web`
+
 - **Nouvelle fonctionnalité :** `nom_de_la_fonctionnalité/plateforme`
-  - _Ex: `kanban-view/client-web` ou `email-notification/api`_
+  - \_Ex: `kanban-view/client-web`
+  - `email-notification/api`
 - **Sous-fonctionnalité :** `nom_de_la_sous_fonctionnalité/nom_fonctionnalité/plateforme`
   - _Ex: `drag-drop/kanban-view/client-web`_
 
