@@ -10,7 +10,7 @@ CREATE TABLE User (
     firstName VARCHAR(100) NOT NULL,
     lastName VARCHAR(100) NOT NULL,
     email VARCHAR(255) UNIQUE NOT NULL,
-    mdp VARCHAR(255) NOT NULL
+    password VARCHAR(255) NOT NULL
 ) ENGINE=InnoDB;
 
 CREATE TABLE Project (
@@ -56,7 +56,7 @@ CREATE TABLE History (
 -- ==========================================
 
 -- Insertion des Utilisateurs
-INSERT INTO User (firstName, lastName, email, mdp) VALUES
+INSERT INTO User (firstName, lastName, email, password) VALUES
 ('Jean', 'Dupont', 'jean.dupont@email.com', '$2y$10$hash1'),
 ('Marie', 'Curie', 'marie.curie@email.com', '$2y$10$hash2'),
 ('Luc', 'Skywalker', 'luc.s@email.com', '$2y$10$hash3');
