@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PMT - Backend Documentation</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --navy: #1E293B;
+            --blue: #3B82F6;
+            --gray: #F8FAFC;
+            --border: #E2E8F0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--gray);
+            color: #334155;
+            margin: 0;
+            display: flex;
+        }
+
+        aside {
+            width: 260px;
+            background: white;
+            height: 100vh;
+            position: fixed;
+            border-right: 1px solid var(--border);
+            padding: 20px;
+        }
+
+        main {
+            margin-left: 260px;
+            padding: 40px;
+            max-width: 900px;
+        }
+
+        .folder-tree {
+            font-family: 'Fira Code', monospace;
+            background: #0F172A;
+            color: #94A3B8;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .folder-tree b {
+            color: #F1F5F9;
+        }
+
+        .step {
+            border-left: 3px solid var(--blue);
+            padding-left: 20px;
+            margin: 20px 0;
+        }
+
+        h1,
+        h2 {
+            color: var(--navy);
+        }
+
+        .card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <aside>
+        <h2 style="font-size: 1.2rem;">PMT Backend</h2>
+        <nav>
+            <p>📁 Architecture</p>
+            <p>🔐 Sécurité JWT</p>
+            <p>🏗 Services & DTOs</p>
+        </nav>
+    </aside>
+    <main>
+        <h1>Architecture du Serveur Spring Boot 3+</h1>
+
+        <section>
+            <h2>Structure des Dossiers (Maven)</h2>
+            <div class="folder-tree">
+                src/main/java/com/pmt/api/<br>
+                ├── <b>config/</b> <small>// Security & Bean configs</small><br>
+                ├── <b>controllers/</b> <small>// REST Endpoints</small><br>
+                ├── <b>dtos/</b> <small>// Data Transfer Objects (MapStruct)</small><br>
+                ├── <b>entities/</b> <small>// JPA Models (Hibernate)</small><br>
+                ├── <b>repositories/</b> <small>// Database Access</small><br>
+                └── <b>services/</b> <small>// Business Logic</small>
+            </div>
+        </section>
+
+        <section>
+            <h2>Choix Techniques</h2>
+            <div class="card">
+                <h3>1. Persistance & Données</h3>
+                <p>Utilisation de <b>Spring Data JPA</b> avec MySQL. Les IDs sont gérés en
+                    <code>INT AUTO_INCREMENT</code>. Les relations sont définies en <code>FetchType.LAZY</code> pour
+                    optimiser les performances.</p>
+            </div>
+            <div class="card">
+                <h3>2. Sécurité Stateless</h3>
+                <p>L'authentification est gérée par <b>Spring Security</b>. Un filtre personnalisé intercepte les
+                    requêtes pour valider le <code>Authorization: Bearer <token></code> contenu dans le header.</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

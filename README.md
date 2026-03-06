@@ -4,7 +4,7 @@
 
 ---
 
-## 🛠 Stack Technique
+## Stack Technique
 
 L'architecture repose sur une séparation stricte entre le client et le serveur pour garantir scalabilité et performance.
 
@@ -15,7 +15,7 @@ L'architecture repose sur une séparation stricte entre le client et le serveur 
 
 ---
 
-## 📊 Modèle Physique des Données (MPD)
+## Modèle Physique des Données (MPD)
 
 Le schéma est conçu pour gérer des rôles dynamiques et un historique complet des actions.
 
@@ -29,7 +29,7 @@ Le schéma est conçu pour gérer des rôles dynamiques et un historique complet
 
 ---
 
-## 🎨 Design System
+## Design System
 
 Le projet utilise une identité visuelle "Deep Navy & Soft Gray" pour un aspect professionnel et reposant.
 
@@ -42,13 +42,13 @@ Le projet utilise une identité visuelle "Deep Navy & Soft Gray" pour un aspect 
 
 ## 🗺️ Roadmaps de Développement
 
-### 🏗️ Backend (Spring Boot)
+### Backend (Spring Boot)
 
 1.  **Persistance** : Mise en place des Entités JPA et Repositories.
 2.  **Services** : Logique métier, mapping DTO (MapStruct) et gestion de l'historique.
 3.  **Sécurité** : Implémentation de Spring Security et des endpoints JWT.
 
-### 🎨 Frontend (Angular)
+### Frontend (Angular)
 
 1.  **UI Foundation** : Configuration de Tailwind et création des Layouts (Sidebar/Header).
 2.  **Core** : Services HTTP, AuthGuards et gestion d'état avec les Signals.
@@ -56,7 +56,7 @@ Le projet utilise une identité visuelle "Deep Navy & Soft Gray" pour un aspect 
 
 ---
 
-## 🚀 Installation Rapide
+## Installation Rapide
 
 ### Backend
 
@@ -65,13 +65,13 @@ Le projet utilise une identité visuelle "Deep Navy & Soft Gray" pour un aspect 
 ./mvnw spring-boot:run
 ```
 
-## 🤝 Contribuer au Projet
+## Contribuer au Projet
 
 Ce projet est **Open Source** ! Nous accueillons avec enthousiasme toutes les contributions, qu'il s'agisse de corrections de bugs, de nouvelles fonctionnalités ou d'améliorations de la documentation.
 
 Pour maintenir la qualité du code, merci de respecter scrupuleusement les règles suivantes :
 
-### 🌳 Gestion des Branches
+### Gestion des Branches
 
 Toute contribution doit se faire via une **branche temporaire** isolée. Le nommage doit suivre ces conventions :
 
@@ -93,7 +93,7 @@ Toute contribution doit se faire via une **branche temporaire** isolée. Le nomm
 2.  **Commits :** Vos messages de commit doivent être explicites (ex: `feat(api): add history tracking logic` ou `fix(web): correct badge alignment`).
 3.  **Validation :** Une relecture de code est nécessaire avant toute fusion.
 
-### 📌 Structure du Dépôt
+### Structure du Dépôt
 
 Nous utilisons un système de branches à deux niveaux :
 
@@ -104,7 +104,7 @@ Nous utilisons un système de branches à deux niveaux :
 
 ---
 
-## 🛠️ Comment soumettre votre modification ?
+## Comment soumettre votre modification ?
 
 1. **Forkez** le projet.
 2. Créez votre branche selon les conventions ci-dessus.

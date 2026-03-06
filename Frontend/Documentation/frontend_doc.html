@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMT - Documentation Frontend (Angular 17+)</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary-navy: #1E293B;
+            --accent-blue: #3B82F6;
+            --bg-gray: #F1F5F9;
+            --white: #FFFFFF;
+            --text-dark: #0F172A;
+            --text-muted: #475569;
+            --code-bg: #1e1e1e;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-gray);
+            color: var(--text-dark);
+            margin: 0;
+            display: flex;
+            line-height: 1.6;
+        }
+
+        /* Sidebar Navigation */
+        aside {
+            width: 300px;
+            background: var(--white);
+            height: 100vh;
+            position: fixed;
+            border-right: 1px solid #E2E8F0;
+            padding: 2.5rem 1.5rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav-brand {
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--primary-navy);
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--accent-blue);
+            padding-bottom: 0.5rem;
+        }
+
+        .nav-menu a {
+            display: block;
+            padding: 0.75rem 1rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 500;
+            border-radius: 8px;
+            transition: 0.2s;
+            margin-bottom: 0.25rem;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            background: var(--primary-navy);
+            color: var(--white);
+        }
+
+        /* Main Content */
+        main {
+            margin-left: 300px;
+            padding: 4rem;
+            max-width: 1100px;
+            width: 100%;
+        }
+
+        .section {
+            margin-bottom: 5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-navy);
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            border-bottom: 2px solid #E2E8F0;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Arborescence (Folder Tree) */
+        .tree-container {
+            background: var(--code-bg);
+            color: #d4d4d4;
+            padding: 1.5rem;
+            border-radius: 12px;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.95rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .tree-container b {
+            color: var(--accent-blue);
+        }
+
+        .comment {
+            color: #6a9955;
+            font-style: italic;
+        }
+
+        /* Bloc de code CodeMirror style */
+        .code-block {
+            background: #282c34;
+            color: #abb2bf;
+            padding: 1.5rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            border-left: 5px solid var(--accent-blue);
+        }
+
+        /* Cards pour les composants */
+        .card {
+            background: var(--white);
+            border: 1px solid #E2E8F0;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 1.5rem 0;
+        }
+
+        .status-badge {
+            background: #DBEAFE;
+            color: var(--accent-blue);
+            padding: 4px 12px;
+            border-radius: 99px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 1024px) {
+            aside {
+                width: 0;
+                display: none;
+            }
+
+            main {
+                margin-left: 0;
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <aside>
+        <div class="nav-brand">PMT Frontend</div>
+        <nav class="nav-menu">
+            <a href="#structure" class="active">📁 Arborescence src/</a>
+            <a href="#signals">⚡ Signaux (State)</a>
+            <a href="#tailwind">🎨 Tailwind Config</a>
+            <a href="#api">📡 Services API</a>
+        </nav>
+    </aside>
+
+    <main>
+        <header class="section">
+            <span class="status-badge">Angular 17+ / Signals</span>
+            <h1>Architecture & Guidelines Frontend</h1>
+            <p>Guide technique complet pour le développement du client Web de Project Management Tool.</p>
+        </header>
+
+        <section id="structure" class="section">
+            <h2>Structure du Projet</h2>
+            <p>Nous utilisons une approche <strong>Core/Shared/Features</strong> pour une meilleure séparation des
+                préoccupations.</p>
+            <div class="tree-container">
+                src/app/<br>
+                ├── <b>core/</b> <span class="comment">// Singletons (AuthService, Interceptors, Guards)</span><br>
+                ├── <b>shared/</b> <span class="comment">// UI Atoms (Button, Input, Card, Badge)</span><br>
+                ├── <b>features/</b> <span class="comment">// Modules métiers isolés</span><br>
+                │ ├── <b>dashboard/</b> <span class="comment">// Widgets de métriques</span><br>
+                │ ├── <b>projects/</b> <span class="comment">// CRUD Projets</span><br>
+                │ └── <b>tasks/</b> <span class="comment">// Liste et détail des tâches</span><br>
+                ├── <b>models/</b> <span class="comment">// Interfaces & Type definitions</span><br>
+                └── <b>store/</b> <span class="comment">// Gestion d'état globale</span>
+            </div>
+        </section>
+
+
+        <section id="signals" class="section">
+            <h2>Gestion de l'état avec Signals</h2>
+            <p>Depuis Angular 17, nous privilégions les <code>Signals</code> pour la réactivité de l'interface,
+                notamment pour les compteurs de métriques.</p>
+            <div class="card">
+                <h3>Exemple d'implémentation</h3>
+                <pre class="code-block">
+// dashboard.service.ts
+public projectsCount = signal&lt;number&gt;(0);
+public completedTasks = signal&lt;number&gt;(0);
+
+updateMetrics(data: MetricsDTO) {
+  this.projectsCount.set(data.activeCount);
+  this.completedTasks.set(data.doneCount);
+}</pre>
+            </div>
+        </section>
+
+        <section id="tailwind" class="section">
+            <h2>Intégration Tailwind CSS</h2>
+            <p>Le Design System est injecté directement dans les classes utilitaires via le fichier de configuration.
+            </p>
+            <div class="card">
+                <h3>Palette personnalisée</h3>
+                <p>Utilisez les classes suivantes pour respecter la charte :</p>
+                <ul>
+                    <li><code>text-deep-navy</code> : Titres et Sidebar.</li>
+                    <li><code>bg-soft-gray</code> : Background de page.</li>
+                    <li><code>rounded-pmt</code> : Border-radius de 12px (standard cartes).</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="api" class="section">
+            <h2>Consommation de l'API</h2>
+            <p>Chaque appel est sécurisé par un <code>HttpInterceptor</code> qui ajoute le token JWT.</p>
+            <div class="card">
+                <h3>Service Pattern</h3>
+                <p>Toutes les méthodes de service retournent des <code>Observable</code>. Le composant s'abonne ou
+                    utilise <code>toSignal()</code>.</p>
+                <pre class="code-block">
+// project.service.ts
+getAllProjects(): Observable&lt;Project[]&gt; {
+  return this.http.get&lt;Project[]&gt;(`${this.apiUrl}/projects`);
+}</pre>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>

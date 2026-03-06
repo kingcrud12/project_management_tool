@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Officielle - PMT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-navy: #1E293B;
+            --bg-gray: #F8FAFC;
+            --sidebar-bg: #F1F5F9;
+            --accent-blue: #3B82F6;
+            --text-main: #334155;
+            --text-light: #64748B;
+            --white: #FFFFFF;
+            --success: #22C55E;
+            --warning: #F59E0B;
+            --danger: #EF4444;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-gray);
+            color: var(--text-main);
+            display: flex;
+            line-height: 1.6;
+        }
+
+        /* Sidebar */
+        nav {
+            width: 280px;
+            height: 100vh;
+            background-color: var(--sidebar-bg);
+            border-right: 1px solid #E2E8F0;
+            position: fixed;
+            padding: 2rem;
+            overflow-y: auto;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: var(--primary-navy);
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links {
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-light);
+            font-size: 0.95rem;
+            font-weight: 500;
+            display: block;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: all 0.2s;
+        }
+
+        .nav-links a:hover {
+            background-color: #E2E8F0;
+            color: var(--primary-navy);
+        }
+
+        /* Main Content */
+        main {
+            margin-left: 280px;
+            flex: 1;
+            padding: 3rem 5rem;
+            max-width: 1200px;
+        }
+
+        header {
+            margin-bottom: 4rem;
+            border-bottom: 1px solid #E2E8F0;
+            padding-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary-navy);
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+            scroll-margin-top: 2rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--primary-navy);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin: 1.5rem 0 1rem 0;
+            color: var(--primary-navy);
+        }
+
+        /* Cards & Lists */
+        .card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style-position: inside;
+            margin-left: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-right: 5px;
+        }
+
+        .badge-success {
+            background: #DCFCE7;
+            color: var(--success);
+        }
+
+        .badge-warning {
+            background: #FEF3C7;
+            color: var(--warning);
+        }
+
+        .badge-danger {
+            background: #FEE2E2;
+            color: var(--danger);
+        }
+
+        .badge-info {
+            background: #DBEAFE;
+            color: var(--accent-blue);
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        code {
+            background: #F1F5F9;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: monospace;
+            color: var(--danger);
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                width: 0;
+                display: none;
+            }
+
+            main {
+                margin-left: 0;
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">📘 PMT Doc</div>
+        <ul class="nav-links">
+            <li><a href="#presentation">1. Présentation</a></li>
+            <li><a href="#functional">2. Spécifications</a></li>
+            <li><a href="#architecture">3. Architecture</a></li>
+            <li><a href="#design">4. Design System</a></li>
+            <li><a href="#contribution">5. Contribution</a></li>
+            <li><a href="#roadmap">6. Roadmap</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header>
+            <h1>Documentation Officielle - PMT</h1>
+            <p class="subtitle">Logiciel de gestion de projet</p>
+        </header>
+
+        <section id="presentation">
+            <h2>1. Présentation du Projet</h2>
+            <p>PMT est une plateforme de gestion de projet collaboratif conçue spécifiquement pour les équipes de
+                développement logiciel. L'outil vise à centraliser la planification, le suivi et la collaboration.</p>
+            <div class="card">
+                <h3>Objectifs Clés :</h3>
+                <ul>
+                    <li>Planification structurée des projets.</li>
+                    <li>Suivi précis de l'avancement des tâches.</li>
+                    <li>Collaboration fluide (Admin, Membre, Observateur).</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="functional">
+            <h2>2. Spécifications Fonctionnelles</h2>
+
+            <h3>Authentification & Accès</h3>
+            <div class="card">
+                <ul>
+                    <li><strong>Inscription :</strong> Création de compte (Nom, Email, MDP).</li>
+                    <li><strong>Connexion :</strong> Accès sécurisé via Email/MDP.</li>
+                </ul>
+            </div>
+
+            <h3>Gestion de Projet & Équipe</h3>
+            <div class="card">
+                <ul>
+                    <li><strong>Création :</strong> Un utilisateur crée un projet et devient Admin.</li>
+                    <li><strong>Invitation :</strong> Invitation de membres via leur adresse e-mail.</li>
+                    <li><strong>Rôles :</strong> Attribution des permissions (Admin, Membre, Observateur).</li>
+                </ul>
+            </div>
+
+            <h3>Gestion des Tâches</h3>
+            <div class="card">
+                <ul>
+                    <li><strong>Opérations :</strong> Création, Assignation et Mise à jour des tâches.</li>
+                    <li><strong>Visualisation :</strong> Vue unitaire et Tableau de bord par statuts.</li>
+                    <li><strong>Audit :</strong> Historique complet des modifications et notifications e-mail.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="architecture">
+            <h2>3. Architecture Technique</h2>
+            <div class="tech-grid">
+                <div class="card">
+                    <span class="badge badge-info">Frontend</span>
+                    <p>Angular 17+ (Signals, RxJS) & Tailwind CSS</p>
+                </div>
+                <div class="card">
+                    <span class="badge badge-info">Backend</span>
+                    <p>Spring Boot 3+ (Java 17, JPA, Spring Security)</p>
+                </div>
+                <div class="card">
+                    <span class="badge badge-info">Database</span>
+                    <p>MySQL</p>
+                </div>
+                <div class="card">
+                    <span class="badge badge-info">Auth</span>
+                    <p>API REST sécurisée par JWT</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="design">
+            <h2>4. Design System</h2>
+            <div class="card" style="border-left: 10px solid var(--primary-navy);">
+                <p><strong>Couleurs :</strong> Deep Navy (#1E293B) & Soft Gray (#F8FAFC)</p>
+                <p><strong>Composants :</strong> Cartes (12px), Sidebar persistante.</p>
+                <p><strong>Statuts :</strong>
+                    <span class="badge badge-success">Success</span>
+                    <span class="badge badge-warning">Warning</span>
+                    <span class="badge badge-danger">Danger</span>
+                </p>
+            </div>
+        </section>
+
+        <section id="contribution">
+            <h2>5. Guide de Contribution</h2>
+            <div class="card">
+                <h3>Branches</h3>
+                <ul>
+                    <li><code>fix/nom-du-bug/plateforme</code></li>
+                    <li><code>feat/nom-fonctionnalite/plateforme</code></li>
+                </ul>
+                <h3>Workflow</h3>
+                <p><code>develop_v1 (dev)</code> ➔ <code>staging_v1 (test)</code> ➔ <code>main_v1 (prod)</code></p>
+            </div>
+        </section>
+
+        <section id="roadmap">
+            <h2>6. Roadmap</h2>
+            <div class="card">
+                <p><strong>Phase 1 :</strong> Backend (Initialisation JPA, Sécurité JWT, CRUD).</p>
+                <p><strong>Phase 2 :</strong> Frontend (Intégration Tailwind, Layouts, Services).</p>
+                <p><strong>Phase 3 :</strong> Industrialisation (Tests, CI/CD, Déploiement).</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
