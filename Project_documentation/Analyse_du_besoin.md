@@ -14,8 +14,9 @@ A l'occasion de cette analyse , nous :
 
 Cette découverte se décline deux phases : la découverte des logiciels de gestion de projet (LGP) et ensuite la découverte du contexte du marché des logiciels de gestion de projet.
 
-- **A. Découverte des LGP :**
-  C'est quoi , un LGP ?
+### A. Découverte des LGP :\*\*
+
+C'est quoi , un LGP ?
 
 C'est une plateforme numérique qui permet à une équipe d'organiser, de planifier et de suivre l'exécution d'un travail pour atteindre un objectif précis dans un délai imparti.
 
@@ -23,7 +24,7 @@ Si l'on devait résumer, c'est le chef d'orchestre numérique de votre activité
 
 Voici les quatre piliers qui définissent ce type d'outil :
 
-### 1. La Planification (Le "Quand") :\*\*
+#### 1. La Planification (Le "Quand") :
 
 C’est la capacité de définir la chronologie du projet.
 
@@ -33,7 +34,7 @@ C’est la capacité de définir la chronologie du projet.
 
 - Dépendances : On indique que la tâche B ne peut pas commencer avant que la tâche A soit finie (souvent via un Diagramme de Gantt).
 
-### 2. L'Organisation et l'Assignation (Le "Qui fait quoi") :\*\*
+#### 2. L'Organisation et l'Assignation (Le "Qui fait quoi") :
 
 L'outil centralise les responsabilités.
 
@@ -43,7 +44,7 @@ L'outil centralise les responsabilités.
 
 - Statut : On suit l'avancement en temps réel (À faire, En cours, Bloqué, Terminé).
 
-### 3. La Collaboration (Le "Comment") :\*\*
+#### 3. La Collaboration (Le "Comment") :
 
 C'est l'espace d'échange autour du travail.
 
@@ -51,7 +52,7 @@ C'est l'espace d'échange autour du travail.
 
 - Communication : On commente les tâches, on mentionne les collègues (@associé) pour poser des questions.
 
-### 4. Le Suivi et le Reporting (Le "Où en est-on") :\*\*
+#### 4. Le Suivi et le Reporting (Le "Où en est-on") :
 
 Pour les managers et les associés, l'outil génère une vue d'ensemble.
 
