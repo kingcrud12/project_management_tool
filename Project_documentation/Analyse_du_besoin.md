@@ -58,7 +58,7 @@ Pour les managers et les associés, l'outil génère une vue d'ensemble.
 
 - Tableaux de bord : Graphiques montrant le retard éventuel, la charge de travail de chaque membre ou le budget consommé.
 
-### Quel est l'état du Marché des LGP ?
+- Quel est l'état du Marché des LGP ?
 
 ### B - La découverte du marché des LGP
 
