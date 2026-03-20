@@ -60,7 +60,7 @@ Pour les managers et les associés, l'outil génère une vue d'ensemble.
 
 ### Quel est l'état du Marché des LGP ?
 
-## 2 - La découverte du marché des LGP
+### B - La découverte du marché des LGP
 
 La découverte de ce marché se décline à son tour en deux phases : Un focus sur la santé économique de ce marché ainsi qu'un focus sur la réglémentation (Européenne, Américaine , internationale) autour des LGP.
 
