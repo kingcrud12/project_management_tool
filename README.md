@@ -1,4 +1,4 @@
-# PMT - Project Management Tool
+# PMT - Project Management Tool (Feuille de route)
 
 **Notre** objectif est de mettre en place PMT : un Logiciel de gestion de projet, inspiré par la puissance de Jira mais guidé par une philosophie de personnalisation extrême et de simplicité d'usage, PMT permettra à chaque département (Marketing, RH, Dev, Sales etc) de construire son propre environnement de travail sans aucune compétence technique.
 
