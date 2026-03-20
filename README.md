@@ -22,7 +22,7 @@ Durant cette phase nous allons :
 
 - Découvrir le domaine des logiciels de gestion de projet
 - Identifier les acteurs de ce domaine ainsi que leurs douleurs
-- Et enfin , Identifier des solutions à ces douleurs, les reporter sous forme d'exigences fonctionnelles et non fonctionnelles.
+- Et enfin , Identifier des solutions à ces douleurs, les reporter sous forme d'exigences fonctionnelles et non fonctionnelles identifiés.
 
 ### 2. Conception
 
