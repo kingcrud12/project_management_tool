@@ -22,7 +22,7 @@ C'est une plateforme numérique qui permet à une équipe d'organiser, de planif
 
 Si l'on devait résumer, c'est le chef d'orchestre numérique de votre activité. Il remplace les emails éparpillés, les fichiers Excel complexes et les post-its collés sur les écrans.
 
-Voici les quatre piliers qui définissent ce type d'outil :
+Voici les quatre piliers qui définissent ce type d'outil:
 
 #### 1. La Planification (Le "Quand") :
 
