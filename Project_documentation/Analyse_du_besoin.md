@@ -12,7 +12,7 @@ A l'occasion de cette analyse , nous :
 
 ## 1- Découverte du domaine des logiciels de gestion de projet :
 
-Cette découverte se décline deux phases : la découverte des logiciels de gestion de projet (LGP) et ensuite la découverte du contexte du marché des logiciels de gestion de projet.
+Cette découverte se décline deux phases : la découverte des logiciels de gestion de projet (LGP) et ensuite la découverte du marché des logiciels de gestion de projet.
 
 ### A. Découverte des LGP :
 
