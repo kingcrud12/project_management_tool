@@ -4,14 +4,11 @@ from typing import List
 from . import models, schemas
 from .database import SessionLocal, engine
 
-# Create the database tables (if they don't exist)
-# Note: Since we manualy created the sqlite file with a script, 
-# this will only create missing tables.
+
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Project Management Tool API")
 
-# Dependency to get the database session
 def get_db():
     db = SessionLocal()
     try:
