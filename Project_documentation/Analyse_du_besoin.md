@@ -106,3 +106,62 @@ Le succès de PMT reposera sur sa capacité à naviguer dans un environnement l�
 - ISO/IEC 27001 : La certification de sécurité indispensable pour rassurer les DSI et les grands comptes.
 
 - Les Tendances de "L'Arbitrage" Technologique : (WCAG 2.1) : Les gouvernements imposent désormais que les outils collaboratifs soient utilisables par tous (handicaps visuels/moteurs), IA Act : Toute fonctionnalité d'IA dans PMT (ex: prédiction de date de fin) doit être transparente et explicable selon les nouvelles normes européennes.
+
+## 2- Identification des acteurs :
+
+Pour comprendre les enjeux de PMT, il est nécessaire d'identifier les forces en présence et les attentes spécifiques de chaque groupe d'acteurs.
+
+### A. Les Offreurs (Le paysage concurrentiel)
+
+Le marché est actuellement dominé par trois types d'offreurs :
+
+- Les Géants Historiques (ex: Jira, SAP) : Puissants et structurés, mais souvent perçus comme des "usines à gaz" complexes et coûteuses.
+
+- Les Visuels Agiles (ex: Monday, Trello) : Très intuitifs pour des tâches simples, mais atteignent vite leurs limites sur des projets complexes ou hautement réglementés.
+
+- Les Spécialistes Niche (ex: Linear) : Excellents pour les développeurs, mais excluent les autres départements (RH, Marketing, Sales).
+
+### B. Les Clients : Une pyramide de besoins
+
+Un client "entreprise" n'est pas un bloc monolithique. Ses besoins se divisent selon trois profils types :
+
+- **1. L'Acheteur (Le Décideur - DSI/CEO) :**
+
+- Ses besoins : Retour sur investissement (ROI) clair, sécurité des données (Souveraineté), conformité légale (RGPD) et maîtrise des coûts.
+
+- Sa frustration : Les factures imprévisibles basées sur des options cachées et la dépendance aux serveurs américains (Cloud Act).
+
+- **2. L'Administrateur (Le PMO/Chef de projet) :**
+
+- Ses besoins : Pouvoir configurer l'outil sans coder, créer des rapports automatisés et structurer des workflows complexes.
+
+- Sa frustration : Devoir faire appel à un consultant externe dès qu'il veut ajouter un champ personnalisé ou modifier un processus.
+
+- **3. L'Utilisateur Final (L'Employé) :**
+
+- Ses besoins : Une interface rapide, moins de clics pour remplir une tâche, et une application mobile efficace.
+
+- Sa frustration : La "fatigue numérique" face à des outils trop denses qui ralentissent son travail quotidien au lieu de l'aider
+
+### La Problématique : Pourquoi l'offre actuelle échoue ?
+
+Malgré la pléthore d'outils , un fossé demeure :
+
+- Rigidité vs Simplicité : Les outils capables de gérer la complexité (comme Jira) sont trop difficiles à prendre en main pour les non-techniciens.
+
+- Le manque de personnalisation réelle : La plupart des outils imposent leur propre logique de travail. L'entreprise doit s'adapter au logiciel, et non l'inverse.
+
+- Le dilemme de la donnée : En 2026, la méfiance envers l'hébergement hors Europe devient un frein majeur à l'achat pour les entreprises stratégiques.
+
+## 3 - Identification des solutions (Proposition de valeur de PMT) :
+
+PMT ne cherche pas à être "un outil de plus", mais à résoudre le paradoxe de la "Puissance Simple".
+
+Comment PMT répond aux besoins non satisfaits :
+
+| Défi du marché            | Réponse de PMT                                                                                                  | Impact pour l'acteur                    |
+| :------------------------ | :-------------------------------------------------------------------------------------------------------------- | :-------------------------------------- |
+| **Complexité excessive**  | Interface épurée (Angular 17) avec **"Simplicité Progressive"** (on n'affiche que ce qui est utile).            | **Utilisateur :** Adoption immédiate.   |
+| **Coût de configuration** | Moteur **No-Code** permettant de créer des champs et des processus via un éditeur visuel.                       | **Administrateur :** Autonomie totale.  |
+| **Souveraineté & Lois**   | Hébergement sur **Cloud Souverain** et conformité native au **Data Act 2026**.                                  | **Acheteur/DSI :** Sécurité juridique.  |
+| **Silos métiers**         | Système de **"Briques LEGO"** : le même outil devient un Kanban pour le Dev et un Calendrier pour le Marketing. | **Entreprise :** Collaboration globale. |
